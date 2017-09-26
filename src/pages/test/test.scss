@@ -1,0 +1,53 @@
+.Test {
+    background-image:url("../assets/img/fondo.png");
+    background-repeat: no-repeat;
+    background-position: -10% 25%;
+    background-size: 160% 110%;
+
+    ion-col{
+       font-size: 120%;
+       
+    }
+    button{
+    margin: 10%;
+    width: 80%;
+    height: 8%;
+    font-size: 2rem;
+    }
+
+    ion-item{
+        background-color:transparent;
+        font-size: 120%;
+    }
+    ion-label{
+        border: none;
+    }
+.radio-md .radio-checked{
+    background-image: url("../assets/img/paloma.png");
+    background-size: 100% 100%;
+    }
+.radio-md .radio-icon {
+    width: 30px;
+    height: 30px;   
+    top: 10px;
+}
+.radio-md .radio-inner{
+    width: 0px;
+    height: 0px;
+}
+.item-cover {
+    position: relative;
+}
+.card-content-md{
+     padding: 5% 30% 5% 20%;
+}
+.list-md .item-block .item-inner{
+        border-bottom: none;
+}
+    
+
+}
+
+
+
+    

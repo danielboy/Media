@@ -1,0 +1,29 @@
+<ion-header  hideBackButton="true">
+  <ion-toolbar color="uan" >
+    <ion-title text-center>Examen {{examen}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="Test">
+ 
+<ion-grid>
+  <h5 text-center> Examen {{examen}} </h5>
+  <ion-card-header>
+    <h6 text-right> {{Preguntas.id}} /100 </h6>
+   </ion-card-header>  
+    <ion-grid>
+        <ion-row>
+    <ion-col text-center width-80  >{{Preguntas.Reactivo}}</ion-col>  
+        </ion-row>
+    </ion-grid>     
+  <ion-card-content>
+    <ion-list radio-group [(ngModel)]="answerValue" >
+        <ion-item *ngFor="let answer of ans">
+            <ion-label >{{answer.respuesta}}</ion-label>
+            <ion-radio value="{{answer.respuesta}}"></ion-radio>
+        </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-grid>
+    <button ion-button color="boton" round  (click)="next(answerValue)">Siguiente</button>
+
+</ion-content>

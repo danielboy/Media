@@ -1,0 +1,21 @@
+<ion-header >
+  <ion-toolbar color="uan">
+    <ion-title text-center>Resultados</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="result">
+  <br>
+  <br>
+    
+  <ion-card>
+
+    <ion-item no-lines *ngFor="let punto of resul | orderBy : ['-puntos', 'nombre']">
+         {{punto.nombre}}
+        <ion-badge item-right>{{punto.puntos | round:0}}%</ion-badge>
+      </ion-item>
+  </ion-card>
+
+  <button ion-button color="boton" round (click)="logout()">Salir</button>
+
+</ion-content>
+

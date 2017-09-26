@@ -1,0 +1,30 @@
+<ion-header >
+  <ion-toolbar color= "uan">
+    <ion-title text-center>UAN Media Superior</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="login">
+
+
+<ion-grid>
+  <img  src="assets/img/ea.png"/>
+  <ion-card-content>
+  <ion-list>
+      <ion-item>
+          <ion-label floating>Matrícula</ion-label>
+          <ion-input text-uppercase [(ngModel)] = "usercreds.matricula" type="text"  ></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>CURP</ion-label>
+          <ion-input text-uppercase [(ngModel)] = "usercreds.curp" type="text"></ion-input>
+      </ion-item>
+      
+  </ion-list>
+
+  </ion-card-content>
+</ion-grid>
+
+  <button ion-button round color="boton" (click)="login(usercreds)">Entrar</button>
+
+</ion-content>
